@@ -1,0 +1,257 @@
+:root {
+    --bg-primary: #1c1a1b;
+    --text-light: #fff;
+    --title-primary-color: #f1dbc3;
+    --subtittle-color: #d1b296;
+    --action-color: #a17654;
+    --event-main-color: #74482f;
+    --text-dark: #44291e;
+    --hr-color:#b47a4d;
+    --button-color: #6e572d;
+    --card-color: #6e572d;
+    --destaque-color: #e0ac4c;
+}
+
+nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+    
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--bg-primary);
+    opacity: 1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+
+}
+
+
+.github {
+    color: var(--title-primary-color);
+    font-weight: 600;
+        
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.principal{
+    background: linear-gradient(to bottom, #1c1a1b, #74482f);
+}
+
+.novidade-galeria {
+    background: linear-gradient(to bottom, #1c1a1b, #74482f);
+
+    max-width: 1120px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+
+    padding: 0 2rem;
+    margin: auto;
+
+    overflow: clip;
+}
+
+.ng-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+hr {
+    border-color: var(--hr-color);
+}
+
+.subtitulo {
+    color: var(--text-light);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.destaque{
+    font-family: epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--hr-color);
+}
+
+.amarelo{
+    color: var(--destaque-color);
+}
+
+.imagens-container {
+    max-width: 45%;
+    column-count: 2;
+
+}
+
+.imagens-container > figure > img {
+    width: 100%;
+    border-radius: 1.5rem;
+
+
+}
+
+.botao-container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+    transform: translate("0, -50%");
+}
+
+.button {
+    border: none;
+    padding: 1rem;
+    border-radius: 99rem;
+    background-color: var(--button-color);
+}
+
+.receitas-destaque {
+    display: flex;
+    flex-direction: column;
+    column-count: 10 ;
+
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receitas-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receitas-titulo {
+    font-family: montserrat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--title-primary-color);
+}
+
+.receitas-subtitulo {
+    font-family: inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.receitas-card-container{
+    padding: 3rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    width: 250rem; 
+}
+
+.receitas-card {
+    background: linear-gradient(to bottom, #1c1a1b, #74482f);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-basis: 30rem;
+    width: 25rem;
+    cursor: pointer;
+
+}
+
+.receitas-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.receitas-card-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receita-likes{
+    color: var(--subtittle-color);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.receita-descrição {
+    color: var(--text-light);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.receita-autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.receita-autor > img {
+    border-radius: 20rem;
+    width: 1.5rem;
+}
+
+.receita-autor-nome {
+    color: var(--title-primary-color);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cards-space{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1120px;
+  column-count: 2;
+}
+
+.rating {
+    width: 1.1rem;
+    
+}
+
+.receitas-card:hover{
+    background: #74482f;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.mid {
+    box-shadow: 0 0 90px 0.5rem black;
+}
