@@ -15,13 +15,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navMenu">
             <span class="logo"
                 <a href=""><img src="/public/images/logo3.png" alt="Logo do Coffee Dev"/></a>
-            </span>
+            </span> 
             <ul class="menu">
-                <li><a>Home</a></li>
-                <li><a>Receitas</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#receitas">Receitas</a></li>
                 <li><a>Novidades</a></li>
                 <li><a>Melhor avaliado</a></li>
             </ul>
@@ -32,7 +32,7 @@
     </header>
     <main>
         <div class="principal">
-            <section class="novidade-galeria">
+            <section id="home" class="novidade-galeria">
                 <header class="ng-conteudo">
                     <span class="destaque">bem-vindo !</span>
                     <h1>O café favorito dos Devs</h1>
@@ -46,62 +46,46 @@
                     <figure><img src="/public/images/image-18.png"></figure>
                 </div>
             </section>
-        </div>
-        <!--<section class="botao-container">
-            <button class="button">
-                <img src="/public/images/coffee3.svg"/>
-            </button>
-        </section>-->
-        <div class="mid">
-            <section class="receitas-destaque">
-                <span class="destaque">receitas</span>
-                <h2 class="receitas-titulo">confira as receitas mais famosas !</h2>
-                <p>As mais amadas pelos devs</p>
-                <section class="cards-space">
-                    <div class="receitas-card-container">
-                        <div class="receitas-card">
-                            <header class="receitas-card-header">
-                                <div class="receitas-card-detalhes">
-                                    <span class="destaque amarelo">em alta 🔥</span>
-                                    <h3 class="receitas-titulo">Café gelado 🧊</h3>
-                                </div>
-                                <p class="receita-likes">
-                                    <img class="rating" src="/public/images/star.svg"/>
-                                    4.5
-                                </p>
-                            </header>
-                            <p class="receita-descrição">Uma bebida perfeita para os dias de calor ! A combinação de energia e refrescancia !</p>
-                            <div class="receita-autor">
-                                <img src="https://avatars.githubusercontent.com/u/51348236?v=4"/>
-                                <span class="receita-autor-nome">Bruno Amaral</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="receitas-card-container">
-                        <div class="receitas-card">
-                            <header class="receitas-card-header">
-                                <div class="receitas-card-detalhes">
-                                    <span class="destaque">novo</span>
-                                    <h3 class="receitas-titulo">Café Mocha 🍫☕️</h3>
-                                </div>
-                                <p class="receita-likes">
-                                    <img class="rating" src="/public/images/star.svg"/>
-                                    4.9
-                                </p>
-                            </header>
-                            <p class="receita-descrição">Para quem ama o amagor do café e o docê do chocolate !</p>
-                            <div class="receita-autor">
-                                <img src="https://avatars.githubusercontent.com/u/142761864?v=4"/>
-                                <span class="receita-autor-nome">Sávio Decaro</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>               
-            </section>
+            
         </div>
     </main>
-    <footer>
-
-    </footer>
+    <section id="receitas" class="section secondary-bg">
+        <div class=" main-content">
+            <h3 class="receitas-color ">RECEITAS</h3>
+            <h1 class="receitas-width" >confira as receitas mais famosas !</h1>
+            <hr class="receitas-width"> 
+            <p>As mais amadas pelos devs</p>
+        </div>
+            <section class="cards">
+                <div class="cards-content">
+                    <h2>NOVO</h2>
+                    <h1>Café Mocha 🍫☕️</h1>
+                    <p>Para quem ama o amargo do café e o doce do chocolate !</p>
+                    <span><p>modificar</p></span>
+                </div>
+                <div class=" cards-content">
+                    <h2>EM ALTA 🔥</h2>
+                    <h1>Café gelado 🧊</h1>
+                    <p>Uma bebida perfeita para os dias de calor ! A combinação de energia e refrescancia !</p>
+                    <span><p>modificar</p></span>
+                </div>            
+                <div class=" cards-content">
+                    <h2>EM ALTA 🔥</h2>
+                    <h1>Café gelado 🧊</h1>
+                    <p>Uma bebida perfeita para os dias de calor ! A combinação de energia e refrescancia !</p>
+                    <span><p>modificar</p></span>
+                </div>            
+                <div class=" cards-content">
+                    <h2>EM ALTA 🔥</h2>
+                    <h1>Café gelado 🧊</h1>
+                    <p>Uma bebida perfeita para os dias de calor ! A combinação de energia e refrescancia !</p>
+                    <span><p>modificar</p></span>
+                </div>            
+            </section>
+    </section>
+    <div class="main-bg">
+        <section>
+            <h1>teste</h1>
+        </section></div>
 </body>
 </html>
