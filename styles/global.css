@@ -1,5 +1,4 @@
 :root {
-    --bg-primary: #1c1a1b;
     --text-light: #fff;
     --title-primary-color: #f1dbc3;
     --subtittle-color: #d1b296;
@@ -7,13 +6,23 @@
     --event-main-color: #74482f;
     --text-dark: #44291e;
     --hr-color:#b47a4d;
-    --button-color: #6e572d;
-    --card-color: #6e572d;
     --destaque-color: #e0ac4c;
+    --gap: 3rem;
+    --bg-secondary:#d1b296;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: roboto;
+    font-size: 2rem;
 }
 
 nav {
-    max-width: 1120px;
+    max-width: 100%;
     margin: auto;
     padding: 1.5rem 10rem;
     
@@ -22,19 +31,49 @@ nav {
     justify-content: space-between;
     align-items: center;
     
-    background-color: var(--bg-primary);
+    background-color: #44291eaf;
     opacity: 1;
+}
+
+.main-bg {
+    background-color: var(--text-dark);
+    color: var(--subtittle-color);
+}
+.secondary-bg {
+    background: var(--bg-secondary);
+    color: var(--text-dark);
+}
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10rem;
+    font-size: 2.3rem;
+}
+.section {
+    min-height: 100vh;
+    padding: 2rem;
+}
+.navMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    gap: 4rem;
 }
 
 .menu{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: var(--gap);
     color: var(--text-light);
     text-transform: uppercase;
-
 }
 
+.menu a:visited,a:link,a:active {
+    color: var(--text-light);
+}
 
 .github {
     color: var(--title-primary-color);
@@ -90,21 +129,18 @@ hr {
 .subtitulo {
     color: var(--text-light);
     font-family: Inter;
-    font-size: 1rem;
     font-weight: 400;
 }
 
 .destaque{
     font-family: epilogue;
-    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    align-items: center;
     color: var(--hr-color);
 }
 
-.amarelo{
-    color: var(--destaque-color);
-}
+
 
 .imagens-container {
     max-width: 45%;
@@ -119,139 +155,38 @@ hr {
 
 }
 
-.botao-container {
-    width: 100%;
-    max-width: 1120px;
+.receitas-width {
+    max-width: 63rem;
+}
+
+.receitas-color {
+    color:#724653;
+}
+
+.cards-content:hover {
+    transform:scale(1.1);
+    transition-duration: 3ms;
+}
+.cards {
     margin: auto;
-    transform: translate("0, -50%");
-}
-
-.button {
-    border: none;
-    padding: 1rem;
-    border-radius: 99rem;
-    background-color: var(--button-color);
-}
-
-.receitas-destaque {
     display: flex;
-    flex-direction: column;
-    column-count: 10 ;
-
-    max-width: 1120px;
-    padding: 3rem 2rem;
-    margin: auto;
-}
-
-.receitas-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.receitas-titulo {
-    font-family: montserrat;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--title-primary-color);
-}
-
-.receitas-subtitulo {
-    font-family: inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--text-light);
-}
-
-.receitas-card-container{
-    padding: 3rem 0.5rem;
-    display: flex;
-    flex-direction: row;
+    gap: 5rem;
+    padding-left: 10rem;
     flex-wrap: wrap;
-    gap: 2rem; 
-    width: 250rem; 
 }
-
-.receitas-card {
-    background: linear-gradient(to bottom, #1c1a1b, #74482f);
-    padding: 2rem;
+.cards-content {
+    max-width: 50rem;
+    max-height: 50rem;
+    align-items: stretch;
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    flex-basis: 30rem;
-    width: 25rem;
-    cursor: pointer;
+    background-color: #74482f ;
+    padding: 1rem 1rem 1rem 1rem;
+    padding:auto;
+}
+.cards-content h2{
+    font-size: 2rem;
 
 }
-
-.receitas-card-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.receitas-card-detalhes {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.receita-likes{
-    color: var(--subtittle-color);
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-
-.receita-descrição {
-    color: var(--text-light);
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.receita-autor{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.receita-autor > img {
-    border-radius: 20rem;
-    width: 1.5rem;
-}
-
-.receita-autor-nome {
-    color: var(--title-primary-color);
-    font-family: Inter;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.cards-space{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1120px;
-  column-count: 2;
-}
-
-.rating {
-    width: 1.1rem;
-    
-}
-
-.receitas-card:hover{
-    background: #74482f;
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-}
-
-.mid {
-    box-shadow: 0 0 90px 0.5rem black;
+.cards-content h1, span{
+    font-size: 3rem;
 }
