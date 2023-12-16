@@ -234,3 +234,9 @@ hr {
     right: 1rem;
     cursor: pointer;
 }
+
+.ingredientes {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: circle
+}
