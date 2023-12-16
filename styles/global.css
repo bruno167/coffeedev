@@ -235,8 +235,9 @@ hr {
     cursor: pointer;
 }
 
-.ingredientes {
-    display: flex;
-    align-items: flex-start;
-    list-style-type: circle
+.pJs li {
+ display: list-item;
+ text-align: start;
+ list-style: disc;
+ margin-left: 2.3rem ;
 }
