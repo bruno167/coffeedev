@@ -174,18 +174,18 @@ hr {
     flex-wrap: wrap;
 }
 .cards-content {
-    max-width: 50rem;
-    max-height: 50rem;
+    width: 50rem;
+    height: 25rem;
     align-items: stretch;
     border-radius: 1rem;
     background-color: #74482f;
-    padding: 1rem 1rem 1rem 1rem;
-    padding:auto;
+    padding: 1rem; 
 }
+
 .cards-content h2{
     font-size: 2rem;
-
 }
+
 .cards-content h1, span{
     font-size: 3rem;
 }
@@ -235,7 +235,7 @@ hr {
     cursor: pointer;
 }
 
-.pJs li {
+li {
  display: list-item;
  text-align: start;
  list-style: disc;
